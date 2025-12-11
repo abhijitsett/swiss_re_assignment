@@ -1,4 +1,4 @@
-package org.analysis;
+package org.analysis.services;
 
 import org.analysis.impl.BasicEmployee;
 import org.analysis.impl.BasicEmployeeFactory;
