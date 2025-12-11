@@ -7,7 +7,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+/*
+* Service class providing analysis operarions of employee data
+*
+* Class contains the below methods :
+* Analyze manager salaries to ensure they are within business defined bounds compared to subordinates
+* Calculate and report the reporting depth for each employee
+* */
 public class EmployeeAnalysisService {
+
+    /*
+    * Analyzes manager salary and prints if a manager earns at least 20% more than their subordinates average salary
+    * and not above 50%
+    * */
     public static List<String> analyzeManagerSalaries(Map<Integer, Employee> employeeMap){
         List<String> results = new ArrayList<>();
         Map<Integer, List<Double>> managerSalaries = new HashMap<>();
@@ -52,6 +65,10 @@ public class EmployeeAnalysisService {
         }
         return results;
     }
+
+    /*
+    * Analyzes the employees reporting depth
+    * */
 
     public static List<String> analyzeReportingDepth(Map<Integer,Employee> employeeMap){
         List<String> results = new ArrayList<>();
