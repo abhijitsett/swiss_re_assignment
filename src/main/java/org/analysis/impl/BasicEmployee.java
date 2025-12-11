@@ -2,6 +2,9 @@ package org.analysis.impl;
 
 import org.analysis.interfaces.Employee;
 
+/*
+* Basic implementation of the Employee interface
+* */
 public class BasicEmployee implements Employee {
 
     private final int id;
@@ -11,6 +14,17 @@ public class BasicEmployee implements Employee {
     private final Double salary;
     private Employee manager;
 
+
+    /*
+    * Constructs a Basic Employee instance
+    * @param id
+    * @param firstName
+    * @param lastName
+    * @param manageId (null if CEO)
+    * @param salary
+    *
+    *
+    * */
     public BasicEmployee(int id, String firstName, String lastName, Integer managerId, Double salary) {
         this.id = id;
         this.firstName = firstName;
